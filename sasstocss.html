@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Compilador SASS a CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <link rel="stylesheet" type="text/css" href="./css/sasscomp.css" />
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./compilador.html">Compilador Online</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="column">
+        <h2>SASS</h2>
+        <textarea id="sass-input" rows="10"></textarea>
+      </div>
+      <div class="column buttons-column">
+        <div class="buttons-group">
+          <button id="compile-button">De SASS a CSS</button>
+          <button id="clear-button">Borrar</button>
+        </div>
+      </div>
+      <div class="column">
+        <h2>CSS</h2>
+        <div class="css-output-container">
+          <textarea id="css-output" rows="10" readonly></textarea>
+          <button id="copy-button" onclick="copyToClipboard()">
+            <i class="fas fa-copy"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.10.12/sass.sync.min.js"></script>
+    <script src="./javascript/sass.js"></script>
+  </body>
+</html>
