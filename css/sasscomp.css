@@ -101,3 +101,12 @@ button:hover {
 #copy-button:hover {
   color: #333;
 }
+.content {
+  flex-grow: 1; /* Nueva regla para hacer que el contenido ocupe el espacio restante */
+}
+
+.footer {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
